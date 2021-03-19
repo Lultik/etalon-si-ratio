@@ -1,24 +1,16 @@
-@font-face {
-    font-family: 'Jura';
-    src: url('./font/Mantonico.otf');
-    font-weight: 400;
-    font-style: normal;
-}
-
 * {
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 body {
-    /* background-color: #eae6ca; */
     background: linear-gradient(to left, #e66465, #9198e5);
 padding: 15vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #47402e;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 
 }
 
@@ -61,18 +53,18 @@ padding: 15vh 0;
 }
 
 .select-mode, .select-etalon {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     outline: none;
 }
 
 .range_input,  #si_step {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     max-width: 25%;
     width: 100%;
 }
 
 #si_error {
-    font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     max-width: 80%;
     width: 100%;
 }
