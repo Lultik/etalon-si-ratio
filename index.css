@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Jura';
+    src: url('./font/Mantonico.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #eae6ca; */
+    background: linear-gradient(to left, #e66465, #9198e5);
+padding: 15vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #47402e;
+    font-family: 'Jura', sans-serif;
+
+}
+
+.main {
+    max-width: 80vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.program {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 50%;
+    width: 100%;
+}
+
+.etalon {
+    background-color: rgb(248, 159, 126);
+
+}
+
+.si {
+    background-color: #f8f32b;
+}
+
+.box_title {
+
+}
+
+.select-mode, .select-etalon {
+    font-family: 'Jura', sans-serif;
+    outline: none;
+}
+
+.range_input,  #si_step {
+    font-family: 'Jura', sans-serif;
+    max-width: 25%;
+    width: 100%;
+}
+
+#si_error {
+    font-family: 'Jura', sans-serif;
+    max-width: 80%;
+    width: 100%;
+}
+
+.btn_do {
+    margin-top: 10px;
+    padding: 20px;
+    display: inline;
+    border: 5px solid rgb(170, 80, 255);
+    background-color: rgb(241, 162, 133);
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.btn_do:hover {
+    border: 5px solid rgb(241, 162, 133);
+    background-color: rgb(170, 80, 255);
+    cursor: pointer;
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+}
+
+.results {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+
+    font-size: 18px;
+}
+
+.result-row:nth-child(2n) {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.result-row:first-child {
+    background-color: rgba(110, 110, 110, 0.6);
+}
+.span {
+    width: 100%;
+    text-align: center;
+
+    color: white;
+}
+
+
+.result_positive {
+    background-color: rgba(104, 236, 104, 0.4);
+}
+
+.result_negative {
+    background-color: rgba(255, 50, 50, 0.4);
+}
