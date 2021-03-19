@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="program">
+            <div class="box etalon">
+                <h2 class='box_title'>ЭТАЛОН</h2>
+                <div class="choose_mode">
+                    <select class='select-etalon'>
+                        <option>Fluke</option>
+                        <option>Transmille</option>
+                    </select>
+                    <select class='select-mode'>
+                        <option>U</option>
+                        <option>I</option>
+                        <option>R</option>
+                    </select>
+                </div>
+                <div class="range">
+                    <input id='auto-range' type="checkbox">
+                <label for="auto-range">Беспредел</label>
+                </div>
+            </div>
+            
+            <div class="box si">
+                <h2 class='box_title'>СИ</h2>
+                <div class="si_range">
+                    <label for="si_range--min">От</label>
+                    <input class='range_input' id='si_range--min' type="text" value='0'>
+                    <label for="si_range--max">до</label>
+                    <input class='range_input'  id='si_range--max' type="text" value='100'>
+                    <span class='si_mode'></span>
+                </div>
+                <div class="si_error">
+                    <label for="si_error" >Формула погрешности</label>
+                    <input id='si_error' type="text" class='si_error--value' value='(0.0001 + 0.004*D + 0.1*X)'>
+                </div>
+                <div class="step">
+                    <label for="si_step">Шаг</label>
+                    <input id='si_step' class='si_step' type="text" value='10'> %
+                </div>
+            </div>
+        </div>
+        <div class='btn_do'>DO!</div>
+        <div class="results"></div>
+    </main>
+    <script src='./index.js'></script>
+    <script src="./etalon.js"></script>
+</body>
+</html>
